@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-LAyOi-UWdZkLPd5qjDGlOAYjQytD2q3Xyuue65oC7w&s">
+
+    <div class="container">
+        <div class="wrapper">
+            <div class="text-input">
+                <textarea class="from-text" placeholder="Enter text"></textarea>
+                <textarea class="to-text" placeholder="Translation" readonly disabled></textarea>
+            </div>
+            <ul class="controls">
+                <li class="row from">
+                    <div class="icons">
+                        <div class="icon">
+                            <i id="form" class="fas fa-copy"></i>
+                        </div>
+                        <i id="form" class="fas fa-volume-up"></i>
+                    </div>
+                    <select>
+                        <option value="en-GB">English</option>
+                    </select>
+                </li>
+                <li class="exchange"><i class="fas fa-exchange-alt"></i></li>
+                <li class="row to">
+                    <select>
+                        <option value="uz-UZ">Uzbek</option>
+                    </select>
+                    <div class="icons">
+                        <div class="icon">
+                            <i id="to" class="fas fa-copy"></i>
+                        </div>
+                        <i id="to" class="fas fa-volume-up"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <button>Translate Text</button>
+    </div>
+
+    <script src="./assets/js/countries.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
